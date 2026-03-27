@@ -1,0 +1,69 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12553.05it/s]
+
+
+
+╭── 🛡️ PD Security Analysis ──╮
+│                             │
+│   Package: cross-env (npm)  │
+│   Verdict: MALICIOUS        │
+│   Risk Score: 100/100       │
+│                             │
+╰────── Analyzer v0.1.0 ──────╯
+╭─── 🔍 Detected Behaviors ───╮
+│   Indicator         Level   │
+│   •             SUSPICIO…   │
+│   ENV_VARIA…                │
+│   •              CRITICAL   │
+│   IMPORT_SE…                │
+│   •              CRITICAL   │
+│   SHELL_EXE…                │
+╰─────────────────────────────╯
+╭─ 🔗 Threat Database Match ──╮
+│ Topic: Data Exfiltration    │
+│ (Environment Variables)     │
+│ Similarity: 77%             │
+│ "The package likely reads   │
+│ API keys or AWS credentials │
+│ and sends them to a remote  │
+│ server."                    │
+╰─────────────────────────────╯
+╭─── 🧠 AI Security Logic ────╮
+│                             │
+│  Step 1: Extracted          │
+│  Behaviors                  │
+│  The code exhibits 3        │
+│  distinct behavioral        │
+│  indicators, specifically:  │
+│  ENV_VARIABLE_ACCESS,       │
+│  IMPORT_SENSITIVE_JS_CROSS  │
+│  -SPAWN, SHELL_EXECUTION.   │
+│                             │
+│  Step 2: Threat Pattern     │
+│  Match (RAG)                │
+│  Match found in vector      │
+│  database with 77%          │
+│  similarity to 'Data        │
+│  Exfiltration (Environment  │
+│  Variables)'.               │
+│  Description: The package   │
+│  likely reads API keys or   │
+│  AWS credentials and sends  │
+│  them to a remote server.   │
+│                             │
+│  Step 3: Correlation &      │
+│  Verdict                    │
+│  CRITICAL: The combination  │
+│  of sensitive imports,      │
+│  network activity, and      │
+│  shell execution is highly  │
+│  characteristic of          │
+│  supply-chain attacks. The  │
+│  risk of data exfiltration  │
+│  or credential theft is     │
+│  extremely high.            │
+│                             │
+│  Confidence: High           │
+│                             │
+╰─────────────────────────────╯
+
+

@@ -13,8 +13,9 @@ Package Detector acts as a security gatekeeper for developers, wrapping `npm` an
 The recommended way to install Package Detector is using the provided installation script, which sets up an isolated virtual environment.
 
 ```bash
-# Clone the repository (if not already there)
-# cd package-detection-cli
+# Clone the repository
+git clone https://github.com/teamoptimadev/package-detection-cli.git
+cd package-detection-cli
 
 # Run the installer
 bash scripts/install.sh
