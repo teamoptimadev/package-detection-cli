@@ -17,8 +17,11 @@ The recommended way to install Package Detector is using the provided installati
 git clone https://github.com/teamoptimadev/package-detection-cli.git
 cd package-detection-cli
 
-# Run the installer
+# --- FOR MAC / LINUX ---
 bash scripts/install.sh
+
+# --- FOR WINDOWS (PowerShell) ---
+powershell.exe -ExecutionPolicy Bypass -File .\scripts\install.ps1
 ```
 
 **Post-installation:**
