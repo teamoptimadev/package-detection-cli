@@ -1,4 +1,4 @@
-# 🛡️ Package Detector (PD) - Universal Security CLI
+# Package Detector (PD) - Universal Security CLI
 
 Package Detector acts as a security gatekeeper for developers, wrapping `npm` and `pip` installation commands to analyze packages for malicious behavior **before** they are installed locally.
 
@@ -8,7 +8,7 @@ Package Detector acts as a security gatekeeper for developers, wrapping `npm` an
 -   **Interactive Prompts:** Blocks high-risk packages and asks for user confirmation.
 -   **Premium CLI UX:** Uses `rich` for beautiful reports and `questionary` for smooth interactions.
 
-## 🚀 Installation
+## Installation
 
 The recommended way to install Package Detector is using the provided installation script, which sets up an isolated virtual environment.
 
@@ -43,7 +43,7 @@ If `~/.local/bin` is not in your PATH, add it to your profile (`~/.zshrc` or `~/
 export PATH="$PATH:$HOME/.local/bin"
 ```
 
-## 🛠️ Usage
+## Usage
 
 ### Basic Installation (Safe)
 Intercept any installation command:
@@ -73,7 +73,7 @@ Analyze a package without triggering the installer:
 pd scan --registry npm cross-env
 ```
 
-## ⚙️ How it Works
+## How it Works
 1.  **Command Intercept:** `pd` captures the package name and intent.
 2.  **Download & Extract:** Downloads the package metadata and source code to a temporary sandbox.
 3.  **Behavior Extraction:** Performs AST analysis to extract sensitive function calls and system interactions.
