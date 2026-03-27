@@ -2,7 +2,7 @@
 
 Package Detector acts as a security gatekeeper for developers, wrapping `npm` and `pip` installation commands to analyze packages for malicious behavior **before** they are installed locally.
 
-## ✨ Features
+## Features
 -   **Multi-Registry Support:** Automatically handles NPM and PyPI ecosystems.
 -   **Security Analysis:** Uses AST parsing and RAG-based threat modeling to detect risky patterns.
 -   **Interactive Prompts:** Blocks high-risk packages and asks for user confirmation.
@@ -24,7 +24,7 @@ bash scripts/install.sh
 powershell.exe -ExecutionPolicy Bypass -File .\scripts\install.ps1
 ```
 
-### 🌍 Global One-Line Install (For Other Users)
+### Global One-Line Install (For Other Users)
 Users can install Package Detector without cloning the repo using these commands:
 
 **macOS / Linux (Bash):**
