@@ -24,6 +24,19 @@ bash scripts/install.sh
 powershell.exe -ExecutionPolicy Bypass -File .\scripts\install.ps1
 ```
 
+### 🌍 Global One-Line Install (For Other Users)
+Users can install Package Detector without cloning the repo using these commands:
+
+**macOS / Linux (Bash):**
+```bash
+curl -sSL https://raw.githubusercontent.com/teamoptimadev/package-detection-cli/main/scripts/install.sh | bash
+```
+
+**Windows (PowerShell):**
+```powershell
+iwr -useb https://raw.githubusercontent.com/teamoptimadev/package-detection-cli/main/scripts/install.ps1 | iex
+```
+
 **Post-installation:**
 If `~/.local/bin` is not in your PATH, add it to your profile (`~/.zshrc` or `~/.bashrc`):
 ```bash
